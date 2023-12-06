@@ -34,11 +34,17 @@ button{
     height: 40px;
 }
 
-.botao:hover{
-    transform: rotate(360deg);
+#cadastro{
+    width: 75px;
 }
 
-h1{
+button:hover{
+    transform: rotate(360deg); 
+    background-color: white;
+    color:blue;
+}
+
+h1, h2{
     font-family: Arial, Helvetica, sans-serif;
     color: #f2f2f2;   
     background-color: blue;
@@ -50,4 +56,57 @@ h1{
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
+}
+
+.cadastroAlimentos{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+input[type=text] {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 150px
+}
+
+textarea {
+    border: 1px solid #000000;
+    background: #ffffff;
+    width: 150px;
+    height: 100px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+
+input[type=text]:hover,
+textarea:hover {
+    background: #ffffff;
+    border: 1px solid #990000;
+}
+
+input[type=submit] {
+    background: #006699;
+    color: #ffffff;
+}
+
+#nome, #preco, #categoria{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

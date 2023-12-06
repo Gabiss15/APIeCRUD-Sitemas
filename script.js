@@ -132,7 +132,7 @@ app.get('/alimentos', verificaToken, (req, res) => {
     const email = document.getElementById('exampleInputEmail1').value;
     const senha = document.getElementById('exampleInputPassword1').value;
   
-    fetch('http://localhost:3000/login', {
+    fetch('http://localhost:3000/index', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

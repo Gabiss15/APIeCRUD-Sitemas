@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastro de produtos</title>
 </head>
 <body>
@@ -11,15 +12,14 @@
         <h2>Adicionar Alimento</h2>
         <form id="adicionar-form">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" required>
+            <input type="text" id="nome" required><br>
             <label for="categoria">Categoria:</label>
-            <input type="text" id="categoria" required>
+            <input type="text" id="categoria" required><br>
             <label for="preco">Preço:</label>
-            <input type="text" id="preco" required>
-            <button type="button" onclick="cadastrarAlimento()">Cadastrar</button>
+            <input type="text" id="preco" required><br>
+            <button type="button" id="cadastro" onclick="cadastrarAlimento()">Cadastrar</button>
         </form>
     </div>
-
     <div class="lista">
         <h2>Lista de Alimentos</h2>
         <ul id="listagem"></ul>
