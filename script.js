@@ -128,9 +128,9 @@ app.get('/alimentos', verificaToken, (req, res) => {
     });
   });
 
-  function login() {
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
+  function login1() {
+    const email = document.getElementById('exampleInputEmail1').value;
+    const senha = document.getElementById('exampleInputPassword1').value;
   
     fetch('http://localhost:3000/login', {
       method: 'POST',
@@ -153,6 +153,9 @@ app.get('/alimentos', verificaToken, (req, res) => {
       console.error('Erro ao fazer login:', error);
     });
   }
+function login(){
+  window.location.href = "crud.html"
+}
 
 //Funções do CRUD
 
@@ -279,3 +282,4 @@ function salvarEdicaoAlimento(id) {
     console.error('Erro ao salvar edição de alimento:', error);
   });
 }
+
