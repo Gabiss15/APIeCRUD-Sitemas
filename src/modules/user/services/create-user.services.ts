@@ -1,5 +1,4 @@
 import { UserDTO } from "../dtos/user.dto";
-import { UserEntity } from "../entities/user.entity";
 import { UserMapping } from "../mappings/user.mapping";
 import { UserRepository } from '../repositories/user.repository';
 

@@ -32,7 +32,7 @@ export class PrismaUserRepository implements UserRepository {
             const users = await this.prisma.user.findMany()
             return users.map(user => UserPrismaMapping.to(user))
         }catch(error){
-            throw new Error("Erro em encontrar usuários")
+            throw new Error("Erro em encontrar todos os usuários")
         }
     }
 
